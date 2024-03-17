@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./src/index.js"></script>
+    <link rel="shortcut icon" href="./assets/icons/cloud.png" type="image/png">
+    <link rel="stylesheet" href="./assets/style/index.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="weather-container">
+        <form>
+            <div class="inputs-container">
+                <div class="radio-container">
+                    <div class="first-radio">
+                        <label for="city-name">City Name</label>
+                        <input type="radio" name="choice" id="name">
+                    </div>
+                    <div class="second-radio">
+                        <label for="id">City ID</label>
+                        <input type="radio" name="choice" id="id">
+                    </div>
+                </div>
+                <div class="info-container">
+                    <input type="text" id="city-name" placeholder="City name" disabled>
+                    <input type="number" id="city-id" placeholder="City ID" disabled>
+                </div>
+            </div>
+            <div class="results-container">
+                <div class="temperature-container">
+                    Temperature
+                    <p id="temperature"></p>
+                </div>
+                <div class="wind-speed-container">
+                    Wind speed
+                    <p id="wind-speed"></p>
+                </div>
+                <div class="humidity-container">
+                    Humidity
+                    <p id="humidity"></p>
+                </div>
+            </div>
+            <div class="button-container">
+                <button>Ok</button>
+                <button>Weather</button>
+                <button type="reset">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

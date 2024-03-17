@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #ffcc00;
+    color: black;
+}
+
+body {
+    color: #fff;
+    background-color: #181d46;
+    width: 100dvw;  
+    height: 100dvh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 50%;
+    background-color: rgb(79, 58, 199);
+    border: #fff solid 1px;
+    border-radius: 30px;
+
+}
+
+form {
+    width: 90%;
+    height: 90%;
+}
+
+.inputs-container {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-container > input {
+    border: none;
+    border-radius: 15px;
+    margin: 50px 0;
+    padding: 20px;
+    width: 40%;
+    height: 5dvh;
+    font-size: 1rem;
+}
+
+.info-container > input:disabled {
+    background-color: #b6b6b6;
+}
+
+.radio-container {
+    display: flex;
+}
+
+.first-radio, .second-radio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.radio-container > div > label  {
+    font-size: 2rem;
+}
+
+.radio-container > div > input {
+    width: 18px;
+    height: 18px;
+}
+
+
+.results-container {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: #041280 solid 2px;
+    border-radius: 15px;
+    background-color: #5864cf;
+    margin-bottom: 40px; 
+}
+
+.results-container > div {
+    width: 33%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.results-container > div > p {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height:  3dvh;
+    border: #150885 solid 2px;
+    border-radius: 5px;
+}
+
+.error-container {
+    color: red;
+    font-size: 1.4rem;
+    font-weight: bold;
+    height: 50px;
+    margin-top: -50px;
+    padding: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-container > button {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #23b6cf;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+    height: 50px;
+}
+
+.button-container > button:hover {
+    background-color: #53daf1;
+}
